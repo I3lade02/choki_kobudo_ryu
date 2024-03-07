@@ -1,0 +1,95 @@
+/*basic styling*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(background_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*navbar styling*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(5, 5, 116);
+}
+
+.logo {
+    font-family: "Slackside One", cursive;
+    font-size: 2.2rem;
+    color:white;
+    padding-left: 20px;
+}
+
+.hamburger{
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.nav__link {
+    position: fixed;
+    width: 94%;
+    top: 5rem;
+    left: 18px;
+}
+
+.nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
+
+.nav__link a:hover {
+    background-color: white;
+    border-radius: 10px;
+    color: rgb(5, 5, 116);
+}
+
+.hide {
+    display:none
+}
+
+@media screen and (min-width: 600px) {
+    .nav__link {
+        display:block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+    }
+
+    .nav__link a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
