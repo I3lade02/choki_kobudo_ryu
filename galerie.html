@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap" rel="stylesheet">
@@ -28,6 +29,29 @@
             </div>
         </nav>
     </header>
+    <div class="parent-nadpis">
+        <div class="kid-nadpis">
+            <h1>Naše galerie</h1>
+        </div>
+    </div>
+    <div class="full-img" id="fullImgBox">
+        <img src="fight.jpg" alt="Image 1" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <div class="img-gallery">
+        <img src="fight.jpg" alt="Image 1" onclick="openFullImg(this.src)">
+        <img src="sword.jpg" alt="Image 2" onclick="openFullImg(this.src)">
+        <img src="pray.jpg" alt="Image 3" onclick="openFullImg(this.src)">
+        <img src="fight.jpg" alt="Image 1" onclick="openFullImg(this.src)">
+        <img src="sword.jpg" alt="Image 2" onclick="openFullImg(this.src)">
+        <img src="pray.jpg" alt="Image 3" onclick="openFullImg(this.src)">
+        <img src="fight.jpg" alt="Image 1" onclick="openFullImg(this.src)">
+        <img src="sword.jpg" alt="Image 2" onclick="openFullImg(this.src)">
+        <img src="pray.jpg" alt="Image 3" onclick="openFullImg(this.src)">
+        <img src="fight.jpg" alt="Image 1" onclick="openFullImg(this.src)">
+    </div>
 </body>
 <script src="./menu_script.js"></script>
+<script src="./gallery_script.js"></script>
 </html>
