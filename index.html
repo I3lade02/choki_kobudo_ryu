@@ -7,9 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="ninja.png" title="samurai icon">
     <title>Choki | Home page</title>
     <style>
+     /* Common styles for .title and .nadpis */    
         .title {
             justify-content: center;
             display: grid;
@@ -19,29 +23,31 @@
         .nadpis {
             font-family: 'Slackside One', cursive;
             background: linear-gradient(to bottom, #F1E1B8, #4DA8F0);
-            border-radius: 10px;
+            border-radius: 20px;
             margin-top: 35px;
             font-size: 2rem;
         }
 
+/* Responsive layout for .parent */
         .parent {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             grid-template-rows: 1fr;
             grid-column-gap: 16px;
             grid-row-gap: 0px;
+            margin-top: 75px;
         }
 
-        .div1 { grid-area: 1 / 1 / 2 / 2; background: navajowhite; top: 0; left: 0; margin-left:20px; border: 5px solid black; box-shadow: 0 0 10px rgba(0,0,0,0.5); border-radius: 10px; }
-        .div2 { grid-area: 1 / 2 / 2 / 3; background: navajowhite; top: 50px; left: 50%; transform: translateY(+150px); border: 5px solid black; box-shadow: 0 0 10px rgba(0,0,0,0.5); border-radius: 10px; }
-        .div3 { grid-area: 1 / 3 / 2 / 4; background: navajowhite; bottom: 0; right: 0; margin-right: 20px; border: 5px solid black; box-shadow: 0 0 10px rgba(0,0,0,0.5); border-radius: 10px; }
-
-        @media (max-width: 600px) {
-            .parent {
-                grid-template-columns: repeat(3, 1fr);
-            }
+/* Responsive layout for .div1, .div2, .div3 */
+        .div1, .div2, .div3 {
+            background: navajowhite;
+            border: 5px solid black;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            border-radius: 20px;
+            margin: 0 20px;
         }
 
+/* Responsive styles for .coaches */
         .coaches {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -50,29 +56,76 @@
             grid-row-gap: 0px;
             place-items: center;
         }
+
+/* Responsive styles for .our-coaches */
         .our-coaches {
-            font-family: cursive;
-            background: linear-gradient(to bottom,  #4DA8F0, #F1E1B8);
+            font-family: "Madimi One", sans-serif;
+            background: linear-gradient(to bottom, #4DA8F0, #F1E1B8);
             border-radius: 10px;
             font-size: 2.5rem;
             color: rgb(5, 5, 116);
         }
 
-        .coach-choki {
+/* Responsive styles for .coach-choki and .coach-bara */
+        .coach-choki, .coach-bara {
             border-radius: 50%;
-            height: 200px;
-            width: 200px;
+            height: 300px;
+            width: 300px;
             align-self: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
-        .coach-bara {
-            border-radius: 50%;
-            height: 200px;
-            width: 200px;
-            align-self: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        .parent h1 {
+            font-family:"Slackside One", cursive;
+            text-align: center;
+            color: rgb(5, 5, 116);
+            font-size: 2rem;
+            margin-left: 0;
         }
+/* Responsive styles for h1 and ul inside .parent */
+        .parent ul {
+            text-align: center;
+            font-family: "Madimi One", sans-serif;
+            color: rgb(5, 5, 116);
+            font-size: 2rem;
+            margin-left: 0; /* Adjusted from 35px */
+            list-style: none;
+            margin-top: 10px;
+        }
+
+/* Media query for smaller screens */
+        @media screen and (max-width: 768px) {
+            /* Adjust grid columns for .parent */
+            .parent {
+                grid-template-columns: 1fr;
+            }
+
+            /* Reset margin for .div1, .div2, .div3 */
+            .div1, .div2, .div3 {
+                margin-top: 10px;
+                grid-gap: 16px;
+            }
+
+            .coaches {
+                grid-template-columns: 1fr;
+            }
+
+            .our-coaches {
+                margin-top: 25px;
+            }
+
+            .coach-choki, .coach-bara {
+                width: 200px;
+                height: 200px;
+                margin-top: 25px;
+            }
+
+            /* Adjust margin for h1 and ul inside .parent */
+            .parent h1, .parent ul {
+                margin: 0;
+            }
+        }
+
 
     </style>
 </head>
@@ -97,57 +150,57 @@
     </header>
     <!--konec hlavičky-->
 <!--nadpis-->    
-<div class="title">
-    <div class="nadpis">
-        <h1 style="color:rgb(5, 5, 116);">CHOKI KOBUDO RYU</h1>
-    </div>
-</div>
-<!--trenéři-->
-<div class="coaches">
-    <div class="coach1">
-        <img src="choki.png" alt="Choki" class="coach-choki">
-    </div>
-    <div class="our-coaches">
-        <span style="color: rgb(5, 5, 116);"><--- Naši trenéři ---></span>
-    </div>
-    <div class="coach2">
-        <img src="bara.png" alt="Bara" class="coach-bara">
-    </div>
-</div>  
-<!--grid pro info o trenérech a aktulitách--> 
-<div class="parent">
-    <div class="div1">
-        <h1 style="text-align: center; font-family: Slackside One, cursive; color: rgb(5, 5, 116);"><u>CHOKI</u></h1>
-        <ul style="margin-left: 35px; font-size: 2rem; color: rgb(5, 5, 116); font-family: cursive;">
-            <li>Zakladatel školy</li>
-            <li>Držitel 2. DANu</li>
-            <li>Učitel: 
-                Začátky práce s katanou,
-                Sestav a
-                Obecné znalosti o Ladio, Battojutsu, Jo
-            </li>
-        </ul>
-    </div>
-    <div class="div2">
-        <h1 style="text-align: center; font-family: Slackside One, cursive; color: rgb(5, 5, 116);"><u>Aktuality</u></h1>
-        <ul style="margin-left: 35px; font-size: 2rem; color: rgb(5, 5, 116); font-family: cursive;">
-            <li></li>
-            <li></li>
-            <li></li>
-    </div>
-    <div class="div3">
-        <h1 style="text-align: center; font-family: Slackside One, cursive; color: rgb(5, 5, 116);"><u>BARU</u></h1>
-        <ul style="margin-left: 35px; font-size: 2rem; color: rgb(5, 5, 116); font-family: cursive;">
-            <li>Spoluzakladatelka školy</li>
-            <li>Baletka a gymnastka</li>
-            <li>Učitelka: 
-                Správné dýchání,
-                držení těla,
-                balancu a posilování
-            </li>
-        </ul>
-    </div>
-</div>
+        <div class="title">
+            <div class="nadpis">
+                <h1 style="color:rgb(5, 5, 116);">CHOKI KOBUDO RYU</h1>
+            </div>
+        </div>
+        <!--trenéři-->
+        <div class="coaches">
+            <div class="coach1">
+                <img src="choki.png" alt="Choki" class="coach-choki">
+            </div>
+            <div class="our-coaches">
+                <span style="color: rgb(5, 5, 116);">Naši trenéři</span>
+            </div>
+            <div class="coach2">
+                <img src="bara.png" alt="Bara" class="coach-bara">
+            </div>
+        </div>  
+        <!--grid pro info o trenérech a aktulitách--> 
+        <div class="parent">
+            <div class="div1">
+                <h1><u>CHOKI</u></h1>
+                <ul>
+                    <li>Zakladatel školy</li>
+                    <li>Držitel 2. DANu</li>
+                    <li>Učitel: 
+                        Začátky práce s katanou,
+                        Sestav a
+                        Obecné znalosti o Ladio, Battojutsu, Jo
+                    </li>
+                </ul>
+            </div>
+            <div class="div2">
+                <h1><u>Nadcházející tréniky</u></h1>
+                <ul>
+                    <li>22. 3. '24 -> pátek</li>
+                    <li>29. 3. '24 -> pátek</li>
+                    <li>5. 4. '24 -> pátek</li>
+            </div>
+            <div class="div3">
+                <h1><u>BARU</u></h1>
+                <ul>
+                    <li>Spoluzakladatelka školy</li>
+                    <li>Baletka a gymnastka</li>
+                    <li>Učitelka: 
+                        Správné dýchání,
+                        držení těla,
+                        balancu a posilování
+                    </li>
+                </ul>
+            </div>
+        </div>
 </body>
 <!--script pro menu-->
 <script src="./menu_script.js"></script>
