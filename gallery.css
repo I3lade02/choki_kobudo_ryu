@@ -1,4 +1,8 @@
-* {
+body {
+    background-image: url(background_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
     margin: 0;
     padding: 0;
 }
@@ -33,6 +37,7 @@
     cursor: pointer;
     transition: 0.4s;
     border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
     object-fit: cover;
 }
 
@@ -71,10 +76,11 @@
 
 @media screen and (max-width: 600px) {
     .img-gallery {
-        width: 90%; /* Adjust width as needed */
-        margin: 100px auto 50px;
-        margin-left: 87.5px;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column width */
-        grid-gap: 30px; /* Adjust gap between images */
+        width: 80%;  
+        margin: 50px 55px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 30px;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -1,3 +1,12 @@
+body {
+    background-image: url(background_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    margin: 0;
+    padding: 0;
+}
+
 .nadpis{
     display: grid;
     grid-template-columns: repeat(3, 150px);
