@@ -31,12 +31,16 @@ body {
 .parent-text {
     display: grid;
     justify-content: center;
-    font-family: "Slackside One", cursive;
+    font-family: "Madimi One", sans-serif;
     font-size: 2rem;
 }
 
+.parent-text h1 {
+    font-family: "Slackside One", sans-serif;
+    margin-top: 0;
+}
+
 .kid-text {
-    padding: 20px;
     justify-content: center;
     background-color: navajowhite;
     border-radius: 20px;
@@ -44,10 +48,16 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: rgb(5, 5, 116);
     margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px; 
 }
 
 .kid-text a {
     color:rgb(5, 5, 116);
+}
+
+.kid-text a:hover {
+    color: #0586D5;
 }
 
 .kid-text ul {

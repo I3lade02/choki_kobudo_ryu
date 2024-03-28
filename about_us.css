@@ -3,30 +3,6 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-    margin: 0;
-    padding: 0;
-}
-
-.nadpis{
-    display: grid;
-    grid-template-columns: repeat(3, 150px);
-    grid-template-rows: 1fr;
-    grid-column-gap: 16px;
-    grid-row-gap: 0;
-    grid-auto-flow: row;
-    direction: ltr;
-    justify-content: space-around;
-    font-family: 'Slackside One', cursive;
-}
-
-.nadpis1,
-.nadpis2,
-.nadpis3 {
-    border-radius: 20px;
-    margin-top: 100px;
-    font-size: 2rem;
-    border: 5px solid black;
-    background-color: navajowhite;
 }
 
 #parent {
@@ -39,6 +15,7 @@ body {
     grid-auto-flow: row;
     direction: ltr;
     height: 100vh;
+    margin-top: 175px;
 }
 
 .outer {
@@ -48,4 +25,21 @@ body {
     padding: 5px;
     margin-top: 50px;
     background-color: navajowhite;
+}
+
+.outer h1 {
+    text-align: center;
+    font-family: "Slackside One", cursive;
+    color: rgb(5, 5, 116);
+}
+
+.inner {
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+    font-size: 1.3rem;
+    color: rgb(5, 5, 116);
+}
+
+.inner ul {
+    list-style: none;
 }
