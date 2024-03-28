@@ -18,57 +18,72 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to bottom, #4DA8F0, #F1E1B8);
-}
-
-.logo {
+    background: rgba(209,205,168,1);
+  }
+  
+  .logo {
     font-family: "Slackside One", cursive;
     font-size: 2.2rem;
     color: rgb(5, 5, 116);
     padding-left: 20px;
-}
-
-.hamburger{
+  }
+  
+  .hamburger {
     padding-right: 20px;
     cursor: pointer;
-}
-
-.hamburger .line {
+    margin-top: 10px;
+  }
+  
+  .hamburger .line {
     display: block;
     width: 40px;
     height: 5px;
-    background-color: white;
+    background-color: rgb(5, 5, 116);
     margin-bottom: 10px;
-}
-
-.nav__link {
+  }
+  
+  .nav__link {
     position: fixed;
     width: 100%;
-    top: 3.2rem;
+    top: 2.8rem;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: linear-gradient(to bottom, #F1E1B8, #4DA8F0);
+    background: rgba(209,205,168,1); 
     font-family: "Slackside One", cursive;
     font-size: 2.2rem;
-}
+    transition: transform 0.5s ease;
+  }
 
-.nav__link a {
+  .nav__link a {
     display: block;
     text-align: center;
     padding: 10px 0;
     color: rgb(5, 5, 116);
-}
-
-.nav__link a:hover {
+  }
+  
+  .nav__link a:hover {
     background-color: white;
     border-radius: 10px;
-}
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .content {
+    padding: 20px;
+    transition: transform 0.5s ease;
+  }
 
-.hide {
-    display:none;
-}
-
+  .content.shifted{
+    transform: translateY(200px);
+  }
+  
 @media screen and (min-width: 600px) {
+    .nav {
+        background: none;
+    }
+
     .nav__link {
         display:block;
         position: static;
@@ -80,6 +95,7 @@ a {
     .nav__link a {
         display: inline-block;
         padding: 15px 20px;
+        font-size: 2rem;
     }
 
     .hamburger {

@@ -14,42 +14,43 @@
 <body>
     <header>
         <nav class="nav">
-            <a href="index.html" class="logo"><u>Choki kobudo ryu</u></a>
-
-            <div class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </div>
-
-            <div class="nav__link hide">
-                <a href="about_us.html"><u>O nás</u></a>
-                <a href="galerie.html"><u>Galerie</u></a>
-                <a href="kontakt.html"><u>Kontakt</u></a>
-            </div>
+          <p class="logo"></p>
+          <div class="hamburger" id="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <div class="nav__link hide" id="nav-links">
+            <a href="index.html"><u>Domu</u></a>
+            <a href="about_us.html"><u>O nás</u></a>
+            <a href="galerie.html"><u>Galerie</u></a>
+            <a href="kontakt.html"><u>Kontakt</u></a>
+          </div>
         </nav>
-    </header>
-    <div class="parent-nadpis">
-        <div class="kid-nadpis">
-            <h1>Naše galerie</h1>
+      </header>
+    <div class="content">
+        <div class="parent-nadpis">
+            <div class="kid-nadpis">
+                <h1>Naše galerie</h1>
+            </div>
         </div>
-    </div>
-    <div class="full-img" id="fullImgBox">
-        <img src="fight.jpg" alt="Image 1" id="fullImg">
-        <span onclick="closeFullImg()">X</span>
-    </div>
+        <div class="full-img" id="fullImgBox">
+            <img src="fight.jpg" alt="Image 1" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
 
-    <div class="img-gallery">
-        <img src="fight.jpg" alt="Image 1" onclick="openFullImg(this.src)">
-        <img src="sword.jpg" alt="Image 2" onclick="openFullImg(this.src)">
-        <img src="pray.jpg" alt="Image 3" onclick="openFullImg(this.src)">
-        <img src="fight.jpg" alt="Image 1" onclick="openFullImg(this.src)">
-        <img src="sword.jpg" alt="Image 2" onclick="openFullImg(this.src)">
-        <img src="pray.jpg" alt="Image 3" onclick="openFullImg(this.src)">
-        <img src="fight.jpg" alt="Image 1" onclick="openFullImg(this.src)">
-        <img src="sword.jpg" alt="Image 2" onclick="openFullImg(this.src)">
-        <img src="pray.jpg" alt="Image 3" onclick="openFullImg(this.src)">
-        <img src="fight.jpg" alt="Image 1" onclick="openFullImg(this.src)">
+        <div class="img-gallery">
+            <img src="fight.jpg" alt="Image 1" onclick="openFullImg(this.src)">
+            <img src="sword.jpg" alt="Image 2" onclick="openFullImg(this.src)">
+            <img src="pray.jpg" alt="Image 3" onclick="openFullImg(this.src)">
+            <img src="fight.jpg" alt="Image 1" onclick="openFullImg(this.src)">
+            <img src="sword.jpg" alt="Image 2" onclick="openFullImg(this.src)">
+            <img src="pray.jpg" alt="Image 3" onclick="openFullImg(this.src)">
+            <img src="fight.jpg" alt="Image 1" onclick="openFullImg(this.src)">
+            <img src="sword.jpg" alt="Image 2" onclick="openFullImg(this.src)">
+            <img src="pray.jpg" alt="Image 3" onclick="openFullImg(this.src)">
+            <img src="fight.jpg" alt="Image 1" onclick="openFullImg(this.src)">
+        </div>
     </div>
 </body>
 <script src="./menu_script.js"></script>

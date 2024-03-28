@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="ninja.png" title="samurai icon">
     <title>Choki | Home page</title>
@@ -20,24 +18,31 @@
             background-attachment: scroll;
             margin: 0;
             padding: 0;
-}
+        }
      
      /* Common styles for .title and .nadpis */    
         .title {
             justify-content: center;
-            display: grid;
+            display: flex;
             text-align: center;
         }
 
         .nadpis {
             font-family: 'Slackside One', cursive;
-            background: linear-gradient(to bottom, #F1E1B8, #4DA8F0);
             border-radius: 20px;
             margin-top: 35px;
             font-size: 2rem;
+            background: rgb(2,0,36);
+            background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(209,205,168,0.4416141456582633) 0%, rgba(209,205,168,1) 100%);   
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
         }
 
-/* Responsive layout for .parent */
+        .nadpis h1 {
+            text-shadow: 1px 10px 4px #f0f0f0;
+            color: rgb(5,5,116);
+        }
+
+        /* Responsive layout for .parent */
         .parent {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -47,7 +52,7 @@
             margin-top: 75px;
         }
 
-/* Responsive layout for .div1, .div2, .div3 */
+        /* Responsive layout for .div1, .div2, .div3 */
         .div1, .div2, .div3 {
             background: navajowhite;
             border: 5px solid black;
@@ -56,7 +61,7 @@
             margin: 0 20px;
         }
 
-/* Responsive styles for .coaches */
+        /* Responsive styles for .coaches */
         .coaches {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -66,22 +71,25 @@
             place-items: center;
         }
 
-/* Responsive styles for .our-coaches */
+        /* Responsive styles for .our-coaches */
         .our-coaches {
             font-family: "Madimi One", sans-serif;
-            background: linear-gradient(to bottom, #4DA8F0, #F1E1B8);
+            background: rgb(2,0,36);
+            background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(209,205,168,0.4416141456582633) 0%, rgba(209,205,168,1) 100%);
             border-radius: 10px;
             font-size: 2.5rem;
             color: rgb(5, 5, 116);
+            text-shadow: 1px 10px 4px #f0f0f0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
         }
 
-/* Responsive styles for .coach-choki and .coach-bara */
+        /* Responsive styles for .coach-choki and .coach-bara */
         .coach-choki, .coach-bara {
+            height: 325px;
+            width: 325px;
             border-radius: 50%;
-            height: 300px;
-            width: 300px;
             align-self: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
         }
 
         .parent h1 {
@@ -91,7 +99,7 @@
             font-size: 2rem;
             margin-left: 0;
         }
-/* Responsive styles for h1 and ul inside .parent */
+        /* Responsive styles for h1 and ul inside .parent */
         .parent ul {
             text-align: center;
             font-family: "Madimi One", sans-serif;
@@ -102,7 +110,7 @@
             margin-top: 10px;
         }
 
-/* Media query for smaller screens */
+        /* Media query for smaller screens */
         @media screen and (max-width: 768px) {
             /* Adjust grid columns for .parent */
             .parent {
@@ -142,26 +150,26 @@
     <!--hlavička pro menu-->
     <header>
         <nav class="nav">
-            <a href="index.html" class="logo">Choki kobudo ryu</a>
-
-            <div class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </div>
-
-            <div class="nav__link hide">
-                <a href="about_us.html"><u>O nás</u></a>
-                <a href="galerie.html"><u>Galerie</u></a>
-                <a href="kontakt.html"><u>Kontakt</u></a>
-            </div>
+          <p class="logo"></p>
+          <div class="hamburger" id="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <div class="nav__link hide" id="nav-links">
+            <a href="index.html"><u>Domu</u></a>
+            <a href="about_us.html"><u>O nás</u></a>
+            <a href="galerie.html"><u>Galerie</u></a>
+            <a href="kontakt.html"><u>Kontakt</u></a>
+          </div>
         </nav>
-    </header>
+      </header>
     <!--konec hlavičky-->
 <!--nadpis-->    
+    <div class="content">   
         <div class="title">
             <div class="nadpis">
-                <h1 style="color:rgb(5, 5, 116);">CHOKI KOBUDO RYU</h1>
+                <h1>CHOKI KOBUDO RYU</h1>
             </div>
         </div>
         <!--trenéři-->
@@ -186,16 +194,16 @@
                     <li>Učitel: 
                         Začátky práce s katanou,
                         Sestav a
-                        Obecné znalosti o Laido, Battojutsu, Jo
+                        Obecné znalosti o Iaido, Battojutsu, Jo
                     </li>
                 </ul>
             </div>
             <div class="div2">
                 <h1><u>Nadcházející tréniky</u></h1>
                 <ul>
-                    <li>22. 3. '24 -> pátek</li>
                     <li>29. 3. '24 -> pátek</li>
                     <li>5. 4. '24 -> pátek</li>
+                    <li>12. 4. '24 -> pátek</li>
             </div>
             <div class="div3">
                 <h1><u>BARU</u></h1>
@@ -210,6 +218,7 @@
                 </ul>
             </div>
         </div>
+    </div>
 </body>
 <!--script pro menu-->
 <script src="./menu_script.js"></script>
