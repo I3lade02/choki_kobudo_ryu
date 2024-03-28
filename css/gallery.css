@@ -1,12 +1,3 @@
-body {
-    background-image: url(background_1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    margin: 0;
-    padding: 0;
-}
-
 .parent-nadpis {
     display: grid;
     justify-content: center;

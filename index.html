@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="./css/menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
     <title>Choki | Home page</title>
     <style>
         body {
-            background-image: url(background_1.jpg);
+            background-image: url(./img/background_1.jpg);
             background-size: cover;
             background-position: center;
             background-attachment: scroll;
@@ -69,6 +69,7 @@
             grid-column-gap: 16px;
             grid-row-gap: 0px;
             place-items: center;
+            margin-top: -35px;
         }
 
         /* Responsive styles for .our-coaches */
@@ -85,8 +86,8 @@
 
         /* Responsive styles for .coach-choki and .coach-bara */
         .coach-choki, .coach-bara {
-            height: 325px;
-            width: 325px;
+            height: 300px;
+            width: 300px;
             border-radius: 50%;
             align-self: center;
             box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
@@ -128,13 +129,13 @@
             }
 
             .our-coaches {
-                margin-top: 25px;
+                margin-top: 35px;
             }
 
             .coach-choki, .coach-bara {
                 width: 200px;
                 height: 200px;
-                margin-top: 25px;
+                margin-top: 55px;
             }
 
             /* Adjust margin for h1 and ul inside .parent */
@@ -175,13 +176,13 @@
         <!--trenéři-->
         <div class="coaches">
             <div class="coach1">
-                <img src="choki.png" alt="Choki" class="coach-choki">
+                <img src="./img/choki.png" alt="Choki" class="coach-choki">
             </div>
             <div class="our-coaches">
                 <span style="color: rgb(5, 5, 116);">Naši trenéři</span>
             </div>
             <div class="coach2">
-                <img src="bara.png" alt="Bara" class="coach-bara">
+                <img src="./img/bara.png" alt="Bara" class="coach-bara">
             </div>
         </div>  
         <!--grid pro info o trenérech a aktulitách--> 
@@ -221,5 +222,5 @@
     </div>
 </body>
 <!--script pro menu-->
-<script src="./menu_script.js"></script>
+<script src="./scripts/menu_script.js"></script>
 </html>
