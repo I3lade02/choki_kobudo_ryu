@@ -1,14 +1,11 @@
 #parent {
     display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: 50vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 16px;
-    grid-row-gap: 0;
-    grid-auto-flow: row;
-    direction: ltr;
-    height: 100vh;
-    margin-top: 175px;
+    grid-row-gap: 16px;
+    justify-content: space-evenly;
+    height: 87vh;
 }
 
 .outer {
@@ -24,6 +21,7 @@
     text-align: center;
     font-family: "Slackside One", cursive;
     color: rgb(5, 5, 116);
+    font-size: 2rem;
 }
 
 .inner {
@@ -33,6 +31,29 @@
     color: rgb(5, 5, 116);
 }
 
+.inner h2 {
+    font-size: 1.5rem;
+}
+
 .inner ul {
     list-style: none;
 }
+
+@media screen and (max-width: 600px) {
+    #parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 0;
+        grid-row-gap: 20px;
+        justify-content: center;
+        height: auto;
+    }
+
+    .outer {
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
+
+
