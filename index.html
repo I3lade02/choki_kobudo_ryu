@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap" rel="stylesheet">
@@ -16,135 +17,7 @@
             background-size: cover;
             background-position: center;
             background-attachment: scroll;
-            margin: 0;
-            padding: 0;
         }
-     
-     /* Common styles for .title and .nadpis */    
-        .title {
-            justify-content: center;
-            display: flex;
-            text-align: center;
-        }
-
-        .nadpis {
-            font-family: 'Slackside One', cursive;
-            border-radius: 20px;
-            margin-top: 35px;
-            font-size: 2rem;
-            background: rgb(2,0,36);
-            background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(209,205,168,0.4416141456582633) 0%, rgba(209,205,168,1) 100%);   
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
-        }
-
-        .nadpis h1 {
-            text-shadow: 1px 10px 4px #f0f0f0;
-            color: rgb(5,5,116);
-        }
-
-        /* Responsive layout for .parent */
-        .parent {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            grid-template-rows: 1fr;
-            grid-column-gap: 16px;
-            grid-row-gap: 0px;
-            margin-top: 75px;
-        }
-
-        /* Responsive layout for .div1, .div2, .div3 */
-        .div1, .div2, .div3 {
-            background: navajowhite;
-            border: 5px solid black;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
-            border-radius: 20px;
-            margin: 0 20px;
-        }
-
-        /* Responsive styles for .coaches */
-        .coaches {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            grid-template-rows: 1fr;
-            grid-column-gap: 16px;
-            grid-row-gap: 0px;
-            place-items: center;
-            margin-top: -35px;
-        }
-
-        /* Responsive styles for .our-coaches */
-        .our-coaches {
-            font-family: "Madimi One", sans-serif;
-            background: rgb(2,0,36);
-            background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(209,205,168,0.4416141456582633) 0%, rgba(209,205,168,1) 100%);
-            border-radius: 10px;
-            font-size: 2.5rem;
-            color: rgb(5, 5, 116);
-            text-shadow: 1px 10px 4px #f0f0f0;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
-        }
-
-        /* Responsive styles for .coach-choki and .coach-bara */
-        .coach-choki, .coach-bara {
-            height: 300px;
-            width: 300px;
-            border-radius: 50%;
-            align-self: center;
-            box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
-        }
-
-        .parent h1 {
-            font-family:"Slackside One", cursive;
-            text-align: center;
-            color: rgb(5, 5, 116);
-            font-size: 2rem;
-            margin-left: 0;
-        }
-        /* Responsive styles for h1 and ul inside .parent */
-        .parent ul {
-            text-align: center;
-            font-family: "Madimi One", sans-serif;
-            color: rgb(5, 5, 116);
-            font-size: 2rem;
-            margin-left: 0; /* Adjusted from 35px */
-            list-style: none;
-            margin-top: 10px;
-        }
-
-        /* Media query for smaller screens */
-        @media screen and (max-width: 768px) {
-            /* Adjust grid columns for .parent */
-            .parent {
-                grid-template-columns: 1fr;
-            }
-
-            /* Reset margin for .div1, .div2, .div3 */
-            .div1, .div2, .div3 {
-                margin-top: 10px;
-                grid-gap: 16px;
-            }
-
-            .coaches {
-                grid-template-columns: 1fr;
-            }
-
-            .our-coaches {
-                margin-top: 35px;
-            }
-
-            .coach-choki, .coach-bara {
-                width: 200px;
-                height: 200px;
-                margin-top: 55px;
-            }
-
-            /* Adjust margin for h1 and ul inside .parent */
-            .parent h1, .parent ul {
-                margin: 0;
-            }
-        }
-
-
     </style>
 </head>
 <body>
@@ -186,37 +59,47 @@
             </div>
         </div>  
         <!--grid pro info o trenérech a aktulitách--> 
-        <div class="parent">
-            <div class="div1">
+        <div id="parent">
+            <div class="outer">
                 <h1><u>CHOKI</u></h1>
-                <ul>
-                    <li>Zakladatel školy</li>
-                    <li>Držitel 2. DANu</li>
-                    <li>Učitel: 
-                        Začátky práce s katanou,
-                        Sestav a
-                        Obecné znalosti o Iaido, Battojutsu, Jo
-                    </li>
-                </ul>
+                <div class="inner">
+                    <br>
+                    <ul>
+                        <li>Zakladatel školy</li>
+                        <li>Držitel 2. DANu</li>
+                        <li>Učitel: 
+                            Začátky práce s katanou,
+                            Sestav a
+                            Obecné znalosti o Iaido, Battojutsu, Jo
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="div2">
+            <div class="outer">
                 <h1><u>Nadcházející tréniky</u></h1>
-                <ul>
-                    <li>29. 3. '24 -> pátek</li>
-                    <li>5. 4. '24 -> pátek</li>
-                    <li>12. 4. '24 -> pátek</li>
+                <div class="inner">
+                    <br>
+                    <ul>
+                        <li>29. 3. '24 -> pátek</li>
+                        <li>5. 4. '24 -> pátek</li>
+                        <li>12. 4. '24 -> pátek</li>
+                    </ul>
+                </div>
             </div>
-            <div class="div3">
+            <div class="outer">
                 <h1><u>BARU</u></h1>
-                <ul>
-                    <li>Spoluzakladatelka školy</li>
-                    <li>Baletka a gymnastka</li>
-                    <li>Učitelka: 
-                        Správné dýchání,
-                        držení těla,
-                        balancu a posilování
-                    </li>
-                </ul>
+                <div class="inner">
+                    <br>
+                    <ul>
+                        <li>Spoluzakladatelka školy</li>
+                        <li>Baletka a gymnastka</li>
+                        <li>Učitelka: 
+                            Správné dýchání,
+                            držení těla,
+                            balancu a posilování
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
