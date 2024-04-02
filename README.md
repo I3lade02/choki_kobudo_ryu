@@ -1,4 +1,4 @@
-# choki_kobudo_ryu
+# CHOKI KOBUDO RYU
 ## Website for japanese martial arts club
 ### TODO:
 - add calendar with highlighted training days 
