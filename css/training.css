@@ -1,0 +1,99 @@
+.container {
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(209,205,168,0.4416141456582633) 0%, rgba(209,205,168,1) 100%);
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+    font-family: 'Madimi One', sans-serif;
+    color:rgb(5, 5, 116);
+}
+
+.cudlik {
+  background-color: rgb(5, 5, 116);
+  border: 3.5px solid rgb(2,0,36);
+  border-radius: 30px;
+  box-shadow: rgb(5, 5, 116);
+  color: rgba(209, 205, 168, 1);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.cudlik:hover {
+  background-color: rgba(209, 205, 168, 1);
+  color: rgb(5, 5, 116);
+}
+
+.cudlik:active {
+  box-shadow: black;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .cudlik {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 150px;
+}
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Madimi One', sans-serif;
+    color: rgb(5, 5, 116);
+    margin-top: 50px;
+}
+
+.kid-text {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(209,205,168,0.4416141456582633) 0%, rgba(209,205,168,1) 100%);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    font-size: 2rem;
+}
+
+
