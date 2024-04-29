@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Choki</title>
+</head>
+<body>
+   
+    <?php
+        include 'login.php';
+    ?>
+   
+    <div class="main">
+        <p class="sign" style="text-align: center;">Log in</p>
+        <form class="form1" action="login.php" method="post">
+            <input class="un" type="text" placeholder="username" style="text-align: center;">
+            <input type="password" class="pass" placeholder="password" style="text-align: center;">
+            <a class="submit" style="text-align: center;">sign</a>
+        </form>
+   </div>
+</body>
+</html>
