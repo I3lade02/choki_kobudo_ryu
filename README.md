@@ -3,5 +3,5 @@
 ### TODO:
 - add calendar with highlighted training days
 - [x] add registration for training form with email service
-- import and rewrite with tailwindcss
-- use react after being condifent with it
+- import and rewrite with bootstrap
+
